@@ -15,7 +15,7 @@ server.use(
 server.use(router)
 
 server.listen(3000, () => {
-    console.loog("Json Server is running")
+    console.log("Json Server is running")
 })
 
 module.exports = server;
