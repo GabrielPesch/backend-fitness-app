@@ -14,8 +14,9 @@ server.use(
 
 server.use(router)
 
-server.listen(3000, () => {
-    console.log("Json Server is running")
-})
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`Json Server is running on port ${PORT}`)
+});
 
 module.exports = server;
